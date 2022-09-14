@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     name: book-import
+    acm-demo: test-deployment-label
   name: book-import
 spec:
   replicas: 1
@@ -13,7 +14,7 @@ spec:
     metadata:
       labels:
         name: book-import
-        acm-demo: test
+        
     spec:
       containers:
       - image: quay.io/jpacker/hugo-nginx:latest
