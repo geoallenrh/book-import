@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         name: book-import
+        acm-demo: test
     spec:
       containers:
       - image: quay.io/jpacker/hugo-nginx:latest
